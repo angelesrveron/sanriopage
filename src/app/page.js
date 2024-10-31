@@ -48,7 +48,7 @@ const Home = () => {
   }, [imagenCargada]);
 
   return (
-    <div style={{ overflowX: 'hidden' }}>
+    <div style={{overflow: 'hidden' }}>
       <div >
         <Image
           id="image"

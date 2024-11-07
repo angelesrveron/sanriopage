@@ -5,8 +5,8 @@ import styles from "./CreateCharacter.module.css";
 
 const CreateCharacter = () => {
   const [personajeState, setpersonajeState] = useState({
-    ears: { num_actual: 0, total: 2 },
-    clothes: { num_actual: 0, total: 2 },
+    orejas: { num_actual: 0, total: 2 },
+    ropa: { num_actual: 0, total: 2 },
   });
 
   function next(item) {
@@ -60,7 +60,7 @@ const CreateCharacter = () => {
 
       <input
         type='button'
-        value='RANDOMIZE'
+        value='random'
         className={styles.randomize}
         onClick={() => randomize()}
       />

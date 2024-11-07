@@ -18,35 +18,35 @@
     right: 1119px;
   }
   
-  .ears, .clothes {
+  .orejas, .ropa {
     position: absolute;
     width: 456px;
     height: 670px;
   }
   
-  .ears1 {
-    background-image: url("/ears/ears1.png");
+  .orejas1 {
+    background-image: url("/orejas/orejas1.png");
   }
   
-  .ears2 {
-    background-image: url("/ears/ears2.png");
+  .orejas2 {
+    background-image: url("/orejas/orejas2.png");
   }
   
-  .clothes1 {
-    background-image: url("/clothes/clothes1.png");
+  .ropa1 {
+    background-image: url("/ropa/ropa1.png");
   }
   
-  .clothes2 {
-    background-image: url("/clothes/clothes2.png");
+  .ropa2 {
+    background-image: url("/ropa/ropa2.png");
   }
   
-  .next-ears, .next-clothes {
+  .next-orejas, .next-ropa {
     position: absolute;
     left: 600px;
     top: 410px;
   }
   
-  .next-clothes {
+  .next-ropa {
     top: 440px;
   }
   

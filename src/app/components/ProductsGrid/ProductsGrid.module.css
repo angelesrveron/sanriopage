@@ -1,0 +1,13 @@
+.contenedor-grid{
+    display: flex;
+    height: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  
+}
+
+
+.contenedor-p h2{
+    font-size: 30px;
+}

@@ -1,0 +1,14 @@
+
+
+.imagen {
+    transition: transform 0.2s ease-in-out;
+    filter: drop-shadow(0 0 10px rgba(68, 68, 68, 0.527));
+    cursor: pointer;
+  }
+  
+  .imagen:hover {
+    transform: scale(1.05);
+
+  }
+
+  

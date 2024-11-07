@@ -1,0 +1,26 @@
+
+
+.contenedor-secciones{
+    width: 60%;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-busqueda{
+    margin-top: 30px;
+}
+
+.contenedor-secciones button{
+  padding: 10px;
+  font-size: 11px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contenedor-secciones p{
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}

@@ -11,8 +11,6 @@ const CreateCharacter = () => {
     boca: { num_actual: 0, total: 4 },
     ropa: { num_actual: 0, total: 4 },
     zapatos: { num_actual: 0, total: 4 },
-
-
   });
 
   function next(item) {
@@ -43,43 +41,48 @@ const CreateCharacter = () => {
 
   return (
     <div className={styles.container}>
-       <div className=' flex justify-center flex-col items-center'>
-        <div className="w-4/5 text-white">
-        <h1 className='text-6xl text-black w-11/12 font-modak'>Crea tu personaje único</h1>
-      <p className="text-white font-semibold">¿Qué te hace único? ¡Crea un personaje de Sanrio que refleje tu personalidad y estilo</p>
+      <div className=' flex justify-center flex-col items-center'>
+        <div className='w-4/5 text-white'>
+          <h1 className='text-6xl text-black w-11/12 font-modak'>
+            Crea tu personaje único
+          </h1>
+          <p className='text-white font-semibold'>
+            ¿Qué te hace único? ¡Crea un personaje de Sanrio que refleje tu
+            personalidad y estilo
+          </p>
+        </div>
       </div>
+      <div className={styles.box}>
+        <div className={styles.background}>
+          <div className={styles.body}></div>
+          {Object.keys(personajeState).map((item) => (
+            <div
+              key={item}
+              className={`${styles[item]} ${
+                styles[item + (personajeState[item].num_actual + 1)]
+              }`}
+            ></div>
+          ))}
+        </div>
       </div>
-     <div className={styles.box}>
-      <div className={styles.background}>
-        <div className={styles.body}></div>
+      <div className='flex flex-col items-center '>
         {Object.keys(personajeState).map((item) => (
-          <div
+          <input
+            type='button'
+            value={`${item}`}
             key={item}
-            className={`${styles[item]} ${
-              styles[item + (personajeState[item].num_actual + 1)]
-            }`}
-          ></div>
+            className={styles[`button`]}
+            onClick={() => next(item)}
+          />
         ))}
-      </div>
-      </div> 
-<div className="flex flex-col items-center ">
-      {Object.keys(personajeState).map((item) => (
+
         <input
           type='button'
-          value={`${item}`}
-          key={item}
-          className={styles[`button`]}
-          onClick={() => next(item)}
+          value='random'
+          className={styles.button}
+          onClick={() => randomize()}
         />
-      ))}
-
-      <input
-        type='button'
-        value='random'
-        className={styles.button}
-        onClick={() => randomize()}
-      />
-    </div>
+      </div>
     </div>
   );
 };

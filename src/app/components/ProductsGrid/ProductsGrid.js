@@ -1,33 +1,36 @@
-'use client'
-import Inner from '@/app/components/Inner';
 import ProductCard from '@/app/components/ProductCard/ProductCard.js';
 import { getAllProductsDB } from '@/app/actions';
-import styles from './ProductsGrid.module.css';
-import { useState, useEffect } from 'react';
+import styles from './ProductsGrid.module.css'
+import Image from 'next/image';
 
-export default function ProductsGrid({ category }) {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await getAllProductsDB(category);
-      setProducts(response.products);
-    };
-    fetchProducts();
-  }, [category]);
-
+export default async function ProductsGrid() {
+  const response = await getAllProductsDB()
   return (
-    <section className='flex flex-wrap'>
-      <Inner>
-        <div className={`${styles["contenedor-p"]} `}>
-          <h2 className='text-3xl font-bold flex justify-center mt-10 mb-10 tracking-tight'>Shop</h2>
-          <div className={`${styles["contenedor-grid"]} `}>
-            {products && products.map((item, index) => (
-              <ProductCard key={index} item={item} />
-            ))}
-          </div>
+    <div className={`${styles["all"]}  flex flex-col justify-center items-center`}>
+      
+    <div className={`${styles["section"]}  `}>
+      
+        <Image
+        src={`/imgs/kittyshop.png`}
+        alt='kittyshop'
+        width={150}
+        height={300}
+        style={{height: 180, width: 200, margin:"0 auto"}}
+      />
+      <div className={`${styles["contenedor"]} `}>
+    
+      <div className={`${styles["contenedor-p"]} `}>
+     
+        <h2 className='text-blue-800  flex justify-center mt-5 mb-10 tracking-tight font-modak'>Tienda</h2>
+        <div className={`${styles["contenedor-grid"]} `}>
+          {response.products && response.products.map((item, index) => (
+            <ProductCard key={index} item={item} />
+          ))}
         </div>
-      </Inner>
-    </section>
+        </div>
+        </div>
+       
+    </div>
+    </div>
   );
 }

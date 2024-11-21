@@ -1,28 +1,29 @@
 import React from 'react'
 import styles from './Footer.module.css'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
     <footer>
-    <div>
+    
      
-<div className={styles.footer}>
 
-<div className={styles.row}>
-<ul>
-<li><a href="#">Contact us</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms & Conditions</a></li>
 
-</ul>
+
+    <div className={styles.footer}>
+
+Sanrio Copyright © 2024 - All rights reserved
+<Image
+         src={"/imgs/footer.png"} 
+         alt="history"
+         width={500}
+         height={400}
+         className={`${styles.logo} `}
+       />
 </div>
 
-<div className={styles.row}>
-Petlove Copyright © 2024 Petlove - All rights reserved || PetLove
-</div>
-</div>
 
-</div>
+
 </footer>
   )
 }

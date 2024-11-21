@@ -15,6 +15,13 @@ const Home = () => {
       ease: 'circ.in',
       stagger: 0.3,
     })
+    gsap.to('.animate', {
+      y: '0',
+      opacity: 1,
+      duration: 1.25,
+      ease: 'circ.in',
+      stagger: 0.3,
+    })
     const nube1 = document.querySelector('.nube1');
   const nube2 = document.querySelector('.nube2');
 
@@ -38,24 +45,10 @@ const Home = () => {
 }, [])
 
   return (
-    <div className={`${styles.bg} mb-8`}>
-      <div className="flex flex-col justify-center items-center animate">
-        <div className="flex justify-center items-center mt-10 animate">
-        
-          <h1 className="font-bold text-4xl animate">¡Bienvenidos al tierno mundo de</h1>
-          <Image
-            src={"/imgs/logo.png"} 
-            alt="history"
-            width={200}
-            height={400}
-            className={`${styles.logo} animate`}
-          />
-          <h1 className="font-bold text-4xl  text-center animate">!</h1>
-        </div>
-        <h3 className="text-2xl mt-3 mb-6 animate">¿Por donde quieres comenzar?</h3>
-      </div>
+    <div className={`${styles.bg}  `}>
+   
       
-      <div className='flex justify-center items-center animate'>
+      <div className='flex justify-center items-center pt-10 animate'>
       <Image
             src={"/imgs/nube1.png"} 
             alt="history"
@@ -92,6 +85,10 @@ const Home = () => {
             height={400}
             className={`nube2 ml-3`}
           />
+      </div>
+
+      <div>
+        
       </div>
     </div>
   );

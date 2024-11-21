@@ -4,6 +4,7 @@ import styles from "./Historia.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import Footer from "@/app/components/Footer/Footer";
 
 const Historia = () => {
   const ref = useRef([]);
@@ -19,7 +20,7 @@ const Historia = () => {
           {
             autoAlpha: 1,
             left: 0,
-            duration: 2,
+            duration: 2.5,
             scrollTrigger: {
               trigger: el,
               start: "top bottom-=100",
@@ -39,13 +40,14 @@ const Historia = () => {
 
   return (
     <div className='overflow-x-hidden	'>
-      <div className={styles.divSpace}>¿COMO COMIEZA TODO?</div>
+      <div className={styles.fondo}>
+      <div className={styles.divSpace}>¿CÓMO COMIENZA TODO?</div>
       <div className={`${styles["box-container"]} `}>
-        <div ref={addtoRefs} className={`${styles["box"]} flex ml-20`}>
+        <div ref={addtoRefs} className={`${styles["box"]} `}>
           <Image
             src={"/imgs/creador.png"}
             alt='history'
-            width={500}
+            width={350}
             height={0}
           />
           <div className='flex-col'>
@@ -75,13 +77,13 @@ const Historia = () => {
               personajes y los productos de licencia.
             </p>
           </div>
-          <Image src={"/imgs/kitty.png"} alt='history' width={400} height={0} />
+          <Image src={"/imgs/kitty.png"} alt='history' width={300} height={0} />
         </div>
         <div ref={addtoRefs} className={`${styles["box"]} flex ml-20`}>
           <Image
             src={"/imgs/kittyglobo.png"}
             alt='history'
-            width={500}
+            width={300}
             height={0}
           />
           <div className='flex-col'>
@@ -98,6 +100,8 @@ const Historia = () => {
             </p>
           </div>
         </div>
+      </div>
+      <Footer />
       </div>
     </div>
   );

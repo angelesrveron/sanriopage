@@ -1,0 +1,72 @@
+.badz{
+    height: 700px;
+    width: 300px;
+    background-image: url('/imgs/PNG/badtz2.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.kitty{
+    background-image: url('/imgs/PNG/kitty2.png');
+    background-size: cover;
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.contenedor{
+    display: flex;
+    background-color: #c3e0e5;
+}
+.contenedor h2 {
+    font-size: 15px;
+}
+.contenedor h3{
+    text-align: center;
+
+    width: 80%;
+}
+.keroppi{
+    background-image: url('/imgs/PNG/keroppi2.png');
+    background-size: cover;
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.melody{
+    background-image: url('/imgs/PNG/melody2.png');
+    background-size: cover;
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cinamon{
+    background-image: url('/imgs/PNG/cinamon2.png');
+    background-size: cover;
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kuromi{
+    background-image: url('/imgs/PNG/kuromi2.png');
+    background-size: cover;
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

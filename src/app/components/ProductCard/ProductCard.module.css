@@ -1,5 +1,5 @@
 .contenedor-product{
-    border: 1px solid rgb(226, 226, 226);
+    border: 2px solid #FF9FDF;
     border-radius: 15px;
 width: 230px;   
 height: 280px; 
@@ -22,6 +22,7 @@ background-color: white;
 
 
 
+
 .contenedor-product button{
 display: inline-block;
 outline: 0;
@@ -38,6 +39,6 @@ transition: transform 200ms,background 200ms;
 margin-left: 20px;
 }
 .contenedor-product button:hover{
-    transform: translateY(-2px);
-    background-color: #ff9500 ;
+    background-color: #ff30a2;
+    color: #fff;
 }

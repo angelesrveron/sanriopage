@@ -1,9 +1,15 @@
-import { Inter} from 'next/font/google';
+import localFont from "next/font/local"
+import { Outfit, Modak} from 'next/font/google';
 import './globals.css';
+import Navbar from "@/app/components/Navbar/Navbar.js";
 
 import { AppContextProvider } from '@/app/contexts/AppContext';
 
-const inter = Inter({ subsets: ['latin'] });
+
+
+
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
+const modak = Modak({ subsets: ['latin'], weight: ['400'], variable: '--font-modak' });
 
 export const metadata = {
   title: 'Sanrio',
@@ -16,11 +22,13 @@ export const metadata = {
 
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${outfit.variable}  ${modak.variable}`}>
         <AppContextProvider>
+          <Navbar />
           {children}
 
         </AppContextProvider>

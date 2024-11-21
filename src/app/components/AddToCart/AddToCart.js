@@ -12,23 +12,9 @@ const AddToCart = ({ name, price, id, image, }) => {
     <div className={`${styles["contenedor"]} `} >
    
     
+   
       <button
-        className={`${styles["button2"]} `}
-        
-      >
-        <Image
-          src={`/imgs/bag.png`}
-          width={0}
-          height={0}
-          sizes='100vw'
-          style={{ width: "20px", height: "auto"}} // optional
-          alt='button-shop'
-          position='absolute'
-        />
-        Comprar ahora
-      </button>
-      <button
-        className={`${styles["button1"]} `}
+        className={`${styles["btn"]} `}
         onClick={() => handleAddToCart(name, price, image, id, 1)}
       >
         <Image

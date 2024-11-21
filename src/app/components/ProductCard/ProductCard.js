@@ -8,7 +8,7 @@ const ProductCard = ({ item }) => {
       <div className={`${styles["contenedor-product"]} `}>
     
       <Image
-        src={`/imgs/products/${item.image}`}
+        src={`/imgs/shop/${item.image}`}
         alt={item.name}
         width={150}
         height={300}
@@ -18,7 +18,7 @@ const ProductCard = ({ item }) => {
       <div className='flex flex-col justify-start'>
       <h3 className='mb-2'>{item.name}</h3>
       <div className='flex ml-5 items-center'>
-      <p className='font-semibold text-sm'>{item.price}</p>
+      <p className='font-semibold text-sm'>{item.price + "$"} </p>
 
       <Link href={`/product/${item._id}`}><button>Comprar</button></Link>
       </div>

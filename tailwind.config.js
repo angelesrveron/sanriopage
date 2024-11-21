@@ -11,7 +11,12 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+outfit: ['var(--font-outfit)'],
+modak: ['var(--font-modak)']
+      },
     },
+
   },
   plugins: [],
 };

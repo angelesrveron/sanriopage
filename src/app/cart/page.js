@@ -1,13 +1,18 @@
 import ProductsCheckout from "@/app/components/Cart/ProductsCheckout";
-import Checkout from "@/app/components/Checkout/Checkout";
+import CartForm from "@/app/components/CartForm/CartForm";
+import Footer from "@/app/components/Footer/Footer";
 const Cart = () => {
     return(
-        <section>
-          <div className="flex">
-          <Checkout />
+          <div>
+          <div className="flex justify-center  ">
+
+          <CartForm />
           <ProductsCheckout />
           </div>
-            </section>
+
+          <Footer />
+
+          </div>
         
     )
 }

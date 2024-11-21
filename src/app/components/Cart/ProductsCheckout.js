@@ -8,13 +8,13 @@ const ProductsCheckout = () => {
   return (
     <div className={styles["contenedor"]}>
         <div>
-        <h1 className="text-3xl font-bold mb-6">Tu carrito 🐾</h1>
+        <h1 className="text-4xl font-modak mb-6">Tu carrito </h1>
 
             {cart.map(product =>(
-                <div key={product.id} className="mb-2 flex  items-center border-t-2  border-gray-200 ">
+                <div key={product.id} className="mb-2 pt-4 flex  items-center border-t-2  border-pink-400 ">
 
                     <div className="flex flex-col ">
-                        <Image src={`/imgs/products/${product.image}`} alt={product.name} width={100} height={100}/>
+                        <Image src={`/imgs/shop/${product.image}`} alt={product.name} width={100} height={100}/>
                         
                     </div>
                     <div>
@@ -27,7 +27,7 @@ const ProductsCheckout = () => {
                 </div>
             ))}
         </div>
-        <div className="border-t-2  border-gray-200 mt-5 flex justify-between ">
+        <div className="border-t-2  border-pink-400 mt-5 flex justify-between ">
         <p className="w-2/4 ml-4 mt-2 text-2xl font-semibold">Total: </p>
         <p className="w-2/4 ml-4 mt-2 text-2xl font-semibold"> {`$ ${cartTotal()}`}</p>
         </div>

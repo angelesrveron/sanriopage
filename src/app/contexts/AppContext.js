@@ -44,7 +44,7 @@ export const AppContextProvider = ({ children }) => {
 
   // 11. Calcular total del carrito
   const cartTotal = () =>
-    cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
 
   // 12. Devolver contexto con funciones y valores definidos
   return (

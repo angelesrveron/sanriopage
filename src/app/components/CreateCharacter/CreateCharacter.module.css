@@ -1,58 +1,164 @@
 .container {
-    margin: auto;
-    width: 100%;
-    height: 1123px;
-  }
-  
-  .body {
-    position: absolute;
-    width: 456px;
-    height: 670px;
-    background-image: url("/body.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .background {
-    bottom: 1246px;
-    right: 1119px;
-  }
-  
-  .orejas, .ropa {
-    position: absolute;
-    width: 456px;
-    height: 670px;
-  }
-  
-  .orejas1 {
-    background-image: url("/orejas/orejas1.png");
-  }
-  
-  .orejas2 {
-    background-image: url("/orejas/orejas2.png");
-  }
-  
-  .ropa1 {
-    background-image: url("/ropa/ropa1.png");
-  }
-  
-  .ropa2 {
-    background-image: url("/ropa/ropa2.png");
-  }
-  
-  .next-orejas, .next-ropa {
-    position: absolute;
-    left: 600px;
-    top: 410px;
-  }
-  
-  .next-ropa {
-    top: 440px;
-  }
-  
-  .randomize {
-    position: absolute;
-    left: 600px;
-    top: 600px;
-    font-weight: bold;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: url("/imgs/fondo.jpg");
+  background-size: cover;
+}
+
+.box {
+  background-color: #ff9fd4;
+  width: 30%;
+  height: 500px;
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+}
+.background {
+  position: absolute;
+  left: 70px;
+  top: 50px;
+}
+.body {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-image: url("/body.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.orejas,
+.ojos,
+.boca,
+.zapatos,
+.nariz,
+.ropa {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.orejas1 {
+  background-image: url("/orejas/orejas1.png");
+}
+
+.orejas2 {
+  background-image: url("/orejas/orejas2.png");
+}
+.orejas3 {
+  background-image: url("/orejas/orejas3.png");
+}
+.orejas4 {
+  background-image: url("/orejas/orejas4.png");
+}
+
+.ropa1 {
+  background-image: url("/ropa/ropa1.png");
+}
+.ropa2 {
+  background-image: url("/ropa/ropa2.png");
+}
+.ropa3 {
+  background-image: url("/ropa/ropa3.png");
+}
+.ropa4 {
+  background-image: url("/ropa/ropa4.png");
+}
+
+.ojos1 {
+  background-image: url("/ojos/ojos1.png");
+}
+.ojos2 {
+  background-image: url("/ojos/ojos2.png");
+}
+.ojos3 {
+  background-image: url("/ojos/ojos3.png");
+}
+.ojos4 {
+  background-image: url("/ojos/ojos4.png");
+}
+.ojos5 {
+  background-image: url("/ojos/ojos5.png");
+}
+
+.boca1 {
+  background-image: url("/boca/boca1.png");
+}
+.boca2 {
+  background-image: url("/boca/boca2.png");
+}
+.boca3 {
+  background-image: url("/boca/boca3.png");
+}
+.boca4 {
+  background-image: url("/boca/boca4.png");
+}
+.nariz1 {
+  background-image: url("/nariz/nariz1.png");
+}
+.nariz2 {
+  background-image: url("/nariz/nariz2.png");
+}
+.nariz3 {
+  background-image: url("/nariz/nariz3.png");
+}
+.nariz4 {
+  background-image: url("/nariz/nariz4.png");
+}
+.zapatos1 {
+  background-image: url("/zapatos/zapatos1.png");
+}
+.zapatos2 {
+  background-image: url("/zapatos/zapatos2.png");
+}
+.zapatos3 {
+  background-image: url("/zapatos/zapatos3.png");
+}
+.zapatos4 {
+  background-image: url("/zapatos/zapatos4.png");
+}
+.button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: #4a9eff;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 20px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 200ms, background 200ms;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.button:hover {
+  background-color: #ff30a2;
+  color: #fff;
+}
+
+.button:nth-of-type(5) {
+  margin-top: 60px;
+  background-color: #747474;
+}
+.button:nth-of-type(6) {
+  background-color: #747474;
+}
+.button:nth-of-type(6):hover {
+  background-color: #970000;
+}
+.butto:nth-of-type(5):hover {
+  background-color: #970000;
+}
+.button:nth-of-type(7) {
+  background-color: #e8ff1e;
+  color: black;
+}

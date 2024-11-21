@@ -1,6 +1,6 @@
 // 1. Directiva de Next.js para ejecutar código en el cliente
 "use client";
-
+//Context se usa principalmente cuando algunos datos tienen que ser accesibles por muchos componentes en diferentes niveles de anidamiento. 
 // 2. Importar funciones de React
 import { createContext, useState, useContext } from "react";
 
